@@ -56,7 +56,12 @@ layout: default
         <p>I'm interested in how humans process and remember continuous, real-life experiences. In particular, I study how the brain understand and remember narratives with the help of LLMs. Conversely, I am also interested in improving memory of LLMs using lessons learned from human memory.  </p>
 
         <h2>Research</h2>
-        {{ "{% include research.md %}" | markdownify }}
+        {% capture research_content %}
+          {% include research.md %}
+        {% endcapture %}
+
+        {{ research_content | markdownify }}
+
 
         <h2>Teaching</h2>
         <ol>
