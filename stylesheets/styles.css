@@ -114,9 +114,6 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
-  text-align: center;
-  flex-direction: column;  /* stack children vertically */
-  align-items: center;     /* center everything inside */
 }
 
 /* Make the links vertical and remove gray background */
