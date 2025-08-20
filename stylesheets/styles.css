@@ -158,10 +158,8 @@ header ul a {
 }
 
 header ul a i {
-  width: 1.25em;              /* reserve same width for all icons */
   text-align: center;         /* center inside that space */
   vertical-align: middle;     /* align with text baseline */
-  line-height: 1;             /* avoid extra vertical spacing */
 }
 
 
