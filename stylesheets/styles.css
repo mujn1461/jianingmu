@@ -145,7 +145,7 @@ header li:last-child a {
 
 /* Anchor styling */
 header ul a {
-  display: block;
+  display: flex;
   text-align: left;      /* or center if you want centered icons/text */
   line-height: normal;
   font-size: 14px;
@@ -186,7 +186,7 @@ header ul li + li + li {
 
 header ul a strong {
   font-size:14px;
-  display:block;
+  display:inline;
   color:#222;
 }
 
