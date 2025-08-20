@@ -110,21 +110,25 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+/* Make the links vertical and remove gray background */
 header ul {
   list-style:none;
-  height:40px;
   padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
-  border:1px solid #e0e0e0;
-  width:270px;
+  margin-top: 10px;      /* optional spacing below photo */
+  width: 270px;
+  background: none;       /* remove gray background */
+  border: none;           /* remove border */
+  border-radius: 0;
+  height: auto;           /* auto height instead of 40px */
 }
 
+/* Each list item stacked vertically */
 header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
+  width: auto;           /* full width of ul */
+  float: none;           /* remove horizontal float */
+  border: none;          /* remove right border */
+  margin-bottom: 10px;   /* space between links */
+  height: auto;          /* let height fit content */
 }
 
 header li:first-child a {
@@ -135,18 +139,31 @@ header li:last-child a {
   border-radius:0 5px 5px 0;
 }
 
+/* Anchor styling */
 header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:34px;
+  display: block;
+  text-align: left;      /* or center if you want centered icons/text */
+  line-height: normal;
+  font-size: 14px;
+  padding: 5px 10px;    /* add some padding */
+  color: #333;
+  background: none;      /* remove hover background if needed */
+  height: auto;
 }
 
+header ul a i {
+  display: inline-block;   /* make icon a block in line with text */
+  width: 1em;              /* ensures consistent width */
+  height: 1em;             /* ensures consistent height */
+  line-height: 1;          /* normalize line height */
+  vertical-align: middle;  /* aligns icon to middle of text */
+  margin-right: 5px;       /* space between icon and text */
+}
+
+
 header ul a:hover {
-  color:#999;
+  color:#000;
+  background: none;
 }
 
 header ul a:active {
